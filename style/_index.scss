@@ -1,0 +1,32 @@
+.service__title {
+  &__sub-title {
+    color: $color-less;
+  }
+  &__service__info {
+    color: $text-color;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+  }
+}
+
+.service__control {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .design__info {
+    border: 1px solid $color-less;
+  }
+
+  .development__info {
+  }
+  .marketing__info {
+  }
+}
+
+@media (max-width: 570px;) {
+  .service__control {
+    display: flex;
+    flex-direction: column;
+  }
+}
